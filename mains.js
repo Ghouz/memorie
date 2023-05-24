@@ -21,42 +21,75 @@ carteRetourner6.addEventListener("click", changement6);
 
 let compte = 2;
 let tableau = [2,2,2];
-tableau [1] = 2
+
+/*function verife (){
+    if (compte == 0 ){
+        if (tableau[0] == 0){
+
+        }
+        if (tableau[1] == 0){
+        
+        }
+        if (tableau[2] == 0){
+        
+        }
+        else{
+          carteRetourner1.style.display = "block";
+          carteRetourner2.style.display = "block";
+          carteRetourner3.style.display = "block";
+          carteRetourner4.style.display = "block";
+          carteRetourner5.style.display = "block";
+          carteRetourner6.style.display = "block";
+       }
+
+    }
+}*/
 
 function changement1 (){
     carteRetourner1.style.display = "none";
     carteSwitch1.style.visibility = "visible";
     compte--; 
-    tableau [1] -= -1;
+    tableau [0] -= 1;
+    //verife();
+    console.log(tableau[0])
 }
 
 function changement2 (){
     carteRetourner2.style.display = "none";
     carteSwitch2.style.visibility = "visible";
     compte--; 
-    tableau [1] -= -1;
+    tableau [1] -= 1;
+    verife();
 }
 
 function changement3 (){
     carteRetourner3.style.display = "none";
     carteSwitch3.style.visibility = "visible";
     compte--; 
+    tableau [1] -= 1;
+    verife();
 }
 
 function changement4 (){
     carteRetourner4.style.display = "none";
     carteSwitch4.style.visibility = "visible";
     compte--; 
+    tableau [2] -= 1;
+    verife();
 }
 
 function changement5 (){
     carteRetourner5.style.display = "none";
     carteSwitch5.style.visibility = "visible";
     compte--; 
+    tableau [2] -= 1;
+    verife();
 }
 
 function changement6 (){
     carteRetourner6.style.display = "none";
     carteSwitch6.style.visibility = "visible";
     compte--; 
+    tableau [0] -= 1;
+    verife();
 }
